@@ -1,0 +1,161 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.menu {
+    height: inherit;
+}
+/*************************** Seccion principal**********************/
+
+.header ol{
+    display: flex;
+    height: inherit;
+    list-style: none;
+}
+
+.header ol li {
+    height: inherit;
+}
+
+.header a {
+    display: flex;
+    align-items: center;
+    height: inherit;
+    padding: 0 10px;
+}
+.header-imagen{
+    height: 600px;
+
+}
+.header ol, .header ul{
+    margin:0;
+    padding: 0;
+    list-style: none;
+    text-transform: uppercase;
+    line-height: 40px;
+}
+.header a {
+    color: #909090;
+    text-decoration: white;   
+}
+.container{
+    background-color: white;
+    color: white;
+    display: flex;
+    height: 85px;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.container > figure{
+    margin: 0;
+}
+.header-imagen .overlay{
+    width: 1340px;
+    height: 600px;
+    background: linear-gradient( rgba(25, 209, 231,.5) 0%, rgba(243,17,224,0.5) 60%);
+    position: absolute;
+    top: 94px;
+}
+#titulo-principal{
+    font-size: 84px;
+    position: relative;
+    bottom: 430px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+/***************************Datos personales **********************/
+
+.sobremi{
+    background: #eaeaea;
+    height: 500px;
+    border: 1px solid black;
+}
+.sobremi ol, .sobremi ul{
+    margin:0;
+    padding: 0;
+    list-style: none;
+    text-transform: uppercase;
+    line-height: 40px;
+}
+.imagen-profile{
+    float: left;
+    width: 30%;
+}
+.contenido-profile{
+    margin-left: 3%;
+    float: right;
+    width: 67%;
+}
+.contenido-profile > h2{
+    border-bottom: 1px solid;
+    font-size: 40px;
+}
+/***************************Esttudios **********************/
+
+.estudios{
+    background: #f8888454;
+    height: 620px;
+    border: 1px solid black;
+}
+
+#titulo-sobremi, #titulo-estudios, #herramientas{
+    text-align: center;
+}
+.contenido-header{
+    float: left;
+    width: 30%;
+    padding-left: 20%;
+    position: relative;
+    bottom: 230px;
+}
+.contenido-header > h3{
+    width: 66%;
+}
+.linea {
+    height: 385px;
+    width: 0; 
+    }
+.contenido-descripcion{
+    float: left;
+    width: 30%;
+    padding-right: 20%;
+    position: relative;
+    bottom: 230px;
+}
+.contenido-estudio{
+    height: 100px;
+}
+.contenido-ico{
+height: 4.8rem;
+    width: 4.8rem;
+    line-height: 4.8rem;
+    background: #00a198;
+    border-radius: 50%;
+    text-align: center;
+    color: #FFFFFF;
+    position: relative;
+    left: 40%;
+    top: .9rem;
+    margin-left: -2.4rem;
+}
+
+#icono2{
+    top:90px;
+}
+#icono3{
+    top:175px;
+}
+
+.porfolio{
+    height: 600px;
+}
+
+.footer{
+    height: 500px;
+    background: #000000;
+}
+
+
+
+
