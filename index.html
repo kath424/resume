@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/boton-principal.css">
+    <link rel="stylesheet" href="css/portada.css">
     <link rel="stylesheet" href="css/experiencia.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
     <title>Cv online</title>
@@ -18,10 +18,10 @@
             <nav class="menu">
                 <ol>
                     <li>
-                        <a class="link" href="#titulo-sobremi">Datos personales </a>
+                        <a class="link" href="#sobremi">Datos personales </a>
                     </li>
                     <li>
-                        <a class="link" href="#titulo-estudios">Estudios </a>
+                        <a class="link" href="#estudios">Estudios </a>
                     </li>
                     <li>
                         <a class="link" href="#herramientas">Herramientas </a>
@@ -29,20 +29,31 @@
                     <li>
                         <a class="link" href="#experiencia">Experiencia </a>
                     </li>
+                    <li>
+                        <a class="link" href="#portfolio">Portfolio </a>
+                    </li>
                 </ol>
             </nav>
         </div>
     </header>
-    <div class="header-imagen" >
-        <img src="img/header.jpg" alt="">
-        <div class="overlay"></div>
-        <h1 id="titulo-principal">Katerine Acosta</h1>
-        <p class="intro-position"> Front-end- developer</p>
-        <a class="button stroke smoothscroll" href="#datos" title="">Más sobre mí </a>
+    <div class="portada" >
+        <div class="fondo">
+            <img src="img/header.jpg" alt="">
+            <div class="overlay"></div>
+        </div>
+        <div class="info">
+            <h1 id="titulo-principal">Katerine Acosta</h1>
+            <p class="intro-position"> Front-end developer</p>
+            <a class="stroke smoothscroll" href="#datos" title="">Más sobre mí </a>
+        </div>
+        
     </div>
      
-    <section class="sobremi">
-        <h1 id="titulo-sobremi">Datos personales</h1>
+    <section class="sobremi" id="sobremi">
+        <h1 >Datos personales</h1>
+        <div class="imagen-profile">
+            <img src="img/ka2.jpeg" style="border-radius:50% " width="400" height="400" alt="">
+        </div>
         <div class="contenido-profile"> 
             <h2>Katerine Acosta</h2>
             <ul>
@@ -60,13 +71,10 @@
                 Eveniet assumenda omnis sequi autem minima placeat.
             </p>
         </div>
-        <div class="imagen-profile">
-            <img src="img/ka2.jpeg" style="border-radius:50% " width="400" height="400" alt="">
-        </div>
     </section>
 
-    <section class="estudios">
-        <h1 id="titulo-estudios">ESTUDIOS</h1>
+    <section class="estudios" id="estudios">
+        <h1>ESTUDIOS</h1>
         <div class=" contenido-estudio"> 
             <div class=" contenido-ico">
                 <i class="fa fa-graduation-cap"></i>
@@ -121,146 +129,147 @@
         </div>
     </section>
     
-    <section class="herramientas">
+    <section class="herramientas" id="herramientas">
+        <h1 class="text-white">Herramientas</h2>
         <div class="imagen-still"></div>
         <div class="row">
-                <div class="col-md-6 pb--60">
-                    <!-- Skills Items Start -->
-                    <div class="skills--items">
-                        <div class="skill--title text-uppercase">
-                            <h3 class="h4 text-white">Personal Skills</h3>
-                        </div>
-
-                        <!-- Skill Item Start -->
-                        <div class="skill--item">
-                            <h4 class="h6 fw--400 text-white text-uppercase clearfix">
-                                <span class="skill--text">Hard Work</span>
-                                <span class="skill--count float--right">80%</span>
-                            </h4>
-
-                            <p class="skill--progress" style="width: 80%;" data-trigger="progress_bar"></p>
-                        </div>
-                        <!-- Skill Item End -->
-
-                        <!-- Skill Item Start -->
-                        <div class="skill--item">
-                            <h4 class="h6 fw--400 text-white text-uppercase clearfix">
-                                <span class="skill--text">Self Motivation</span>
-                                <span class="skill--count float--right">90%</span>
-                            </h4>
-
-                            <p class="skill--progress" style="width: 90%;" data-trigger="progress_bar"></p>
-                        </div>
-                        <!-- Skill Item End -->
-
-                        <!-- Skill Item Start -->
-                        <div class="skill--item">
-                            <h4 class="h6 fw--400 text-white text-uppercase clearfix">
-                                <span class="skill--text">Communication</span>
-                                <span class="skill--count float--right">60%</span>
-                            </h4>
-
-                            <p class="skill--progress" style="width: 60%;" data-trigger="progress_bar"></p>
-                        </div>
-                        <!-- Skill Item End -->
-
-                        <!-- Skill Item Start -->
-                        <div class="skill--item">
-                            <h4 class="h6 fw--400 text-white text-uppercase clearfix">
-                                <span class="skill--text">Team Work</span>
-                                <span class="skill--count float--right">65%</span>
-                            </h4>
-
-                            <p class="skill--progress" style="width: 65%;" data-trigger="progress_bar"></p>
-                        </div>
-                        <!-- Skill Item End -->
-
-                        <!-- Skill Item Start -->
-                        <div class="skill--item">
-                            <h4 class="h6 fw--400 text-white text-uppercase clearfix">
-                                <span class="skill--text">Dedication</span>
-                                <span class="skill--count float--right">70%</span>
-                            </h4>
-
-                            <p class="skill--progress" style="width: 70%;" data-trigger="progress_bar"></p>
-                        </div>
-                        <!-- Skill Item End -->
+            <div class="col-md-6 ">
+                <!-- Skills Items Start -->
+                <div class="skills--items">
+                    <div class="skill--title text-uppercase">
+                        <h3 class="h4 text-white">Personal Skills</h3>
                     </div>
-                    <!-- Skills Items End -->
-                </div>
 
-                <div class="col-md-6 pb--60">
-                    <!-- Skills Items Start -->
-                    <div class="skills--items">
-                        <div class="skill--title text-uppercase">
-                            <h3 class="h4 text-white">Professional Skills</h3>
-                        </div>
+                    <!-- Skill Item Start -->
+                    <div class="skill--item">
+                        <h4 class="h6 fw--400 text-white text-uppercase clearfix">
+                            <span class="skill--text">Hard Work</span>
+                            <span class="skill--count float--right">80%</span>
+                        </h4>
 
-                        <!-- Skill Item Start -->
-                        <div class="skill--item">
-                            <h4 class="h6 fw--400 text-white text-uppercase clearfix">
-                                <span class="skill--text">Photoshop</span>
-                                <span class="skill--count float--right">80%</span>
-                            </h4>
-
-                            <p class="skill--progress" style="width: 80%;" data-trigger="progress_bar"></p>
-                        </div>
-                        <!-- Skill Item End -->
-
-                        <!-- Skill Item Start -->
-                        <div class="skill--item">
-                            <h4 class="h6 fw--400 text-white text-uppercase clearfix">
-                                <span class="skill--text">Illustrator</span>
-                                <span class="skill--count float--right">90%</span>
-                            </h4>
-
-                            <p class="skill--progress" style="width: 90%;" data-trigger="progress_bar"></p>
-                        </div>
-                        <!-- Skill Item End -->
-
-                        <!-- Skill Item Start -->
-                        <div class="skill--item">
-                            <h4 class="h6 fw--400 text-white text-uppercase clearfix">
-                                <span class="skill--text">PHP</span>
-                                <span class="skill--count float--right">60%</span>
-                            </h4>
-
-                            <p class="skill--progress" style="width: 60%;" data-trigger="progress_bar"></p>
-                        </div>
-                        <!-- Skill Item End -->
-
-                        <!-- Skill Item Start -->
-                        <div class="skill--item">
-                            <h4 class="h6 fw--400 text-white text-uppercase clearfix">
-                                <span class="skill--text">CSS3</span>
-                                <span class="skill--count float--right">65%</span>
-                            </h4>
-
-                            <p class="skill--progress" style="width: 65%;" data-trigger="progress_bar"></p>
-                        </div>
-                        <!-- Skill Item End -->
-
-                        <!-- Skill Item Start -->
-                        <div class="skill--item">
-                            <h4 class="h6 fw--400 text-white text-uppercase clearfix">
-                                <span class="skill--text">HTML5</span>
-                                <span class="skill--count float--right">70%</span>
-                            </h4>
-
-                            <p class="skill--progress" style="width: 70%;" data-trigger="progress_bar"></p>
-                        </div>
-                        <!-- Skill Item End -->
+                        <p class="skill--progress" style="width: 80%;" data-trigger="progress_bar"></p>
                     </div>
-                    <!-- Skills Items End -->
+                    <!-- Skill Item End -->
+
+                    <!-- Skill Item Start -->
+                    <div class="skill--item">
+                        <h4 class="h6 fw--400 text-white text-uppercase clearfix">
+                            <span class="skill--text">Self Motivation</span>
+                            <span class="skill--count float--right">90%</span>
+                        </h4>
+
+                        <p class="skill--progress" style="width: 90%;" data-trigger="progress_bar"></p>
+                    </div>
+                    <!-- Skill Item End -->
+
+                    <!-- Skill Item Start -->
+                    <div class="skill--item">
+                        <h4 class="h6 fw--400 text-white text-uppercase clearfix">
+                            <span class="skill--text">Communication</span>
+                            <span class="skill--count float--right">60%</span>
+                        </h4>
+
+                        <p class="skill--progress" style="width: 60%;" data-trigger="progress_bar"></p>
+                    </div>
+                    <!-- Skill Item End -->
+
+                    <!-- Skill Item Start -->
+                    <div class="skill--item">
+                        <h4 class="h6 fw--400 text-white text-uppercase clearfix">
+                            <span class="skill--text">Team Work</span>
+                            <span class="skill--count float--right">65%</span>
+                        </h4>
+
+                        <p class="skill--progress" style="width: 65%;" data-trigger="progress_bar"></p>
+                    </div>
+                    <!-- Skill Item End -->
+
+                    <!-- Skill Item Start -->
+                    <div class="skill--item">
+                        <h4 class="h6 fw--400 text-white text-uppercase clearfix">
+                            <span class="skill--text">Dedication</span>
+                            <span class="skill--count float--right">70%</span>
+                        </h4>
+
+                        <p class="skill--progress" style="width: 70%;" data-trigger="progress_bar"></p>
+                    </div>
+                    <!-- Skill Item End -->
                 </div>
+                <!-- Skills Items End -->
+            </div>
+
+            <div class="col-md-6 ">
+                <!-- Skills Items Start -->
+                <div class="skills--items">
+                    <div class="skill--title text-uppercase">
+                        <h3 class="h4 text-white">Professional Skills</h3>
+                    </div>
+
+                    <!-- Skill Item Start -->
+                    <div class="skill--item">
+                        <h4 class="h6 fw--400 text-white text-uppercase clearfix">
+                            <span class="skill--text">Photoshop</span>
+                            <span class="skill--count float--right">80%</span>
+                        </h4>
+
+                        <p class="skill--progress" style="width: 80%;" data-trigger="progress_bar"></p>
+                    </div>
+                    <!-- Skill Item End -->
+
+                    <!-- Skill Item Start -->
+                    <div class="skill--item">
+                        <h4 class="h6 fw--400 text-white text-uppercase clearfix">
+                            <span class="skill--text">Illustrator</span>
+                            <span class="skill--count float--right">90%</span>
+                        </h4>
+
+                        <p class="skill--progress" style="width: 90%;" data-trigger="progress_bar"></p>
+                    </div>
+                    <!-- Skill Item End -->
+
+                    <!-- Skill Item Start -->
+                    <div class="skill--item">
+                        <h4 class="h6 fw--400 text-white text-uppercase clearfix">
+                            <span class="skill--text">PHP</span>
+                            <span class="skill--count float--right">60%</span>
+                        </h4>
+
+                        <p class="skill--progress" style="width: 60%;" data-trigger="progress_bar"></p>
+                    </div>
+                    <!-- Skill Item End -->
+
+                    <!-- Skill Item Start -->
+                    <div class="skill--item">
+                        <h4 class="h6 fw--400 text-white text-uppercase clearfix">
+                            <span class="skill--text">CSS3</span>
+                            <span class="skill--count float--right">65%</span>
+                        </h4>
+
+                        <p class="skill--progress" style="width: 65%;" data-trigger="progress_bar"></p>
+                    </div>
+                    <!-- Skill Item End -->
+
+                    <!-- Skill Item Start -->
+                    <div class="skill--item">
+                        <h4 class="h6 fw--400 text-white text-uppercase clearfix">
+                            <span class="skill--text">HTML5</span>
+                            <span class="skill--count float--right">70%</span>
+                        </h4>
+
+                        <p class="skill--progress" style="width: 70%;" data-trigger="progress_bar"></p>
+                    </div>
+                    <!-- Skill Item End -->
+                </div>
+                <!-- Skills Items End -->
+            </div>
         </div>
     </section>
 
-    <section class="experiencia">
-        <h1 id="experiencia">EXPERIENCIA</h1>
+    <section class="experiencia" id="experiencia">
+        <h1>EXPERIENCIA</h1>
     </section>
 
-    <section class="porfolio">
+    <section class="porfolio" id="portfolio"> 
         <h1>porfolio</h1>
         <img src="img/ciudad-zombie-icon.png" width="200" height="200" alt="Coudad Zombie">
         <img src="img/cv-icon.png" width="200" height="200" alt="Cv">

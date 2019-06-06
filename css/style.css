@@ -1,10 +1,22 @@
 body{
     font-family: Arial, Helvetica, sans-serif;
+    margin:0;
 }
+
 .menu {
     height: inherit;
 }
-/*************************** Seccion principal**********************/
+
+#sobremi > h1,
+#estudios > h1, 
+#herramientas > h1,
+#experiencia > h1,
+#portfolio > h1{
+    text-align: center;
+    text-transform: uppercase;
+}
+
+/*************************** Seccion principal **********************/
 
 .header ol{
     display: flex;
@@ -21,10 +33,6 @@ body{
     align-items: center;
     height: inherit;
     padding: 0 10px;
-}
-.header-imagen{
-    height: 600px;
-
 }
 .header ol, .header ul{
     margin:0;
@@ -49,49 +57,38 @@ body{
 .container > figure{
     margin: 0;
 }
-.header-imagen .overlay{
-    width: 1340px;
-    height: 600px;
-    background: linear-gradient( rgba(25, 209, 231,.5) 0%, rgba(243,17,224,0.5) 60%);
-    position: absolute;
-    top: 94px;
-}
-#titulo-principal{
-    font-size: 84px;
-    position: relative;
-    bottom: 430px;
-    text-align: center;
-    color: #FFFFFF;
-}
 
-/***************************Datos personales **********************/
+/*************************** Datos personales **********************/
 
 .sobremi{
     background: #eaeaea;
     height: 500px;
     border: 1px solid black;
 }
-.sobremi ol, .sobremi ul{
+.imagen-profile{
+    float: left;
+    width: 30%;
+    text-align: center;
+}
+.contenido-profile{
+    margin: 0 3%;
+    float: right;
+    width: 63%;
+}
+.contenido-profile > h2{
+    border-bottom: 1px solid;
+    font-size: 40px;
+}
+.contenido-profile ol, 
+.contenido-profile ul{
     margin:0;
     padding: 0;
     list-style: none;
     text-transform: uppercase;
     line-height: 40px;
 }
-.imagen-profile{
-    float: left;
-    width: 30%;
-}
-.contenido-profile{
-    margin-left: 3%;
-    float: right;
-    width: 67%;
-}
-.contenido-profile > h2{
-    border-bottom: 1px solid;
-    font-size: 40px;
-}
-/***************************Esttudios **********************/
+
+/****************************** Estudios **************************/
 
 .estudios{
     background: #f8888454;
@@ -99,9 +96,7 @@ body{
     border: 1px solid black;
 }
 
-#titulo-sobremi, #titulo-estudios, #herramientas{
-    text-align: center;
-}
+
 .contenido-header{
     float: left;
     width: 30%;
@@ -115,7 +110,8 @@ body{
 .linea {
     height: 385px;
     width: 0; 
-    }
+    margin-top: 1px;
+}
 .contenido-descripcion{
     float: left;
     width: 30%;
@@ -127,7 +123,7 @@ body{
     height: 100px;
 }
 .contenido-ico{
-height: 4.8rem;
+    height: 4.8rem;
     width: 4.8rem;
     line-height: 4.8rem;
     background: #00a198;
@@ -139,23 +135,25 @@ height: 4.8rem;
     top: .9rem;
     margin-left: -2.4rem;
 }
-
 #icono2{
     top:90px;
 }
 #icono3{
     top:175px;
 }
-
 .porfolio{
     height: 600px;
 }
-
 .footer{
     height: 500px;
     background: #000000;
 }
 
+/****************************** Experiencia **************************/
 
 
-
+.experiencia{
+    background: burlywood;
+    height: 400px;
+    border: 1px solid black;
+}
