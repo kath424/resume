@@ -4,13 +4,12 @@
     border: 1px solid black;
 }
 
-.col-md-6 {
+.col-herramienta {
     position: relative;
-    min-height: 1px;
-    padding-right: 15px;
-    padding-left: 15px;
-    width: 48%;
+    padding: 20px 20px;
+    width: 45%;
     float: left;
+    left: 20px;
 }
 
 .skill--title {

@@ -142,7 +142,13 @@ body{
     top:175px;
 }
 .porfolio{
-    height: 600px;
+    height: 700px;
+}
+.port-row{
+    float: left;
+}
+.port-descripcion{
+    padding: 40px;
 }
 .footer{
     height: 500px;
