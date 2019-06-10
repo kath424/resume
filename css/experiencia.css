@@ -110,6 +110,13 @@ p:last-child {
     -webkit-transition: width .85s ease .25s;
     transition: width .85s ease .25s;
 }
+
+
+.skill--item:hover .skill--progress{
+    height: 6px;
+}
+
+
 .herramientas{
     background-image: url(img/still.jpg);
    
